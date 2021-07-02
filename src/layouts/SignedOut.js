@@ -5,8 +5,8 @@ export default function SignedOut(props) {
     return (
         <div>
             <Menu.Item>
-                <Button basic color='blue' onClick={props.signIn}>Sign in</Button>
-                <Button basic color='green' style={{marginLeft:'0.5em'}} >Sign up</Button>
+                <Button basic color='blue' onClick={props.signIn}>Giriş Yap</Button>
+                <Button basic color='green' style={{margin:'0.5em'}} >Kayıt Ol</Button>
             </Menu.Item>
         </div>
     )
