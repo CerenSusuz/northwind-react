@@ -3,14 +3,13 @@ import { Grid, Image, Segment } from 'semantic-ui-react'
 import ProductService from "../services/productService";
 
 export default function Homepage() {
-
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
         let productService = new ProductService()
         productService.getProducts().then(result => setProducts(result.data.data))
     }, [])
-    //'https://cdn.pixabay.com/photo/2016/01/19/14/46/cheeses-1148950_960_720.jpg'
+    
     return (
         <div>
             {products.map((product) => (

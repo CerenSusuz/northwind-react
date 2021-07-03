@@ -12,8 +12,7 @@ export default function ProductDetail() {
     let productService = new ProductService()
     productService.getByProductName(productName).then(result=>setProduct(result.data.data))
   },[])
-
-
+  
   return (
     <div>
       <Card.Group>
