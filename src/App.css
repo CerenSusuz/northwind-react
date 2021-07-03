@@ -5,3 +5,8 @@
 .ui.main.container{
   margin: 1.6em;
 }
+
+.overflow{
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
