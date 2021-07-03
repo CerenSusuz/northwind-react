@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router';
-import { Container, Menu, Image, MenuItem } from 'semantic-ui-react';
+import { Container, Menu, Image, Dropdown } from 'semantic-ui-react';
 import CartSummary from './CartSummary';
 import SignedIn from './SignedIn';
 import SignedOut from './SignedOut';
@@ -20,18 +20,19 @@ export default function Navi() {
 
     return (
         <div>
-            <Menu inverted fixed-top="true" >
+            <Menu fixed='top' inverted style={{ opacity: '.7' }} >
                 <Container>
-                    <Menu.Item>
-                        <Image size="mini" src='https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/12/AdobeStock_113126068-Converted.jpg' style={{ margin: '0.5em' }} />
+                    <Menu.Item as='a' header >
+                        <Image size='mini' src='https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/12/AdobeStock_113126068-Converted.jpg' style={{ marginRight: '1.5em' }} />
+                        e-commerce
                     </Menu.Item>
-
-                    <Menu.Menu position='right'>
+                    <Menu.Item as='a' icon='home' >Anasayfa</Menu.Item>
+                    <Menu.Item position='right'>
                         <CartSummary />
                         {isAuthenticated
                             ? <SignedIn signOut={handleSignOut} />
                             : <SignedOut signIn={handleSignIn} />}
-                    </Menu.Menu>
+                    </Menu.Item>
                 </Container>
             </Menu>
         </div>
