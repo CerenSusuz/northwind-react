@@ -24,8 +24,7 @@ export default function ProductDetail() {
 
                         <Card.Header>{product.productName}</Card.Header>
                         <Card.Meta>{product.categoryName}</Card.Meta>
-                        <Card.Description>
-                            Molly wants to add you to the group <strong>musicians</strong>
+                        <Card.Description><strong>{product.quantityPerUnit}</strong>
                         </Card.Description>
                     </Card.Content>
                     <Card.Content extra>

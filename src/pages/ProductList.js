@@ -17,11 +17,11 @@ export default function ProductList() {
         <Table celled>
           <Table.Header>   
             <Table.Row>
-              <Table.HeaderCell>Product Name</Table.HeaderCell>
-              <Table.HeaderCell>Unit Price</Table.HeaderCell>
-              <Table.HeaderCell>Units of Stock</Table.HeaderCell>
-              <Table.HeaderCell>Description</Table.HeaderCell>
-              <Table.HeaderCell>Category</Table.HeaderCell>
+              <Table.HeaderCell>Ürün Adı </Table.HeaderCell>
+              <Table.HeaderCell>Birim Fiyatı </Table.HeaderCell>
+              <Table.HeaderCell>Stok Adeti</Table.HeaderCell>
+              <Table.HeaderCell>Birim Başına Miktar</Table.HeaderCell>
+              <Table.HeaderCell>Kategori</Table.HeaderCell>
             </Table.Row>
           </Table.Header>
   
