@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Icon, Menu, Table } from 'semantic-ui-react'
 import ProductService from "../services/productService";
 
-
 export default function ProductList() {
   const [products, setProducts] = useState([]);
 
@@ -13,9 +12,9 @@ export default function ProductList() {
   },[])
 
   return (
-      <div>
+      <div >
         <Table celled>
-          <Table.Header>   
+          <Table.Header>    
             <Table.Row>
               <Table.HeaderCell>Ürün Adı </Table.HeaderCell>
               <Table.HeaderCell>Birim Fiyatı </Table.HeaderCell>
