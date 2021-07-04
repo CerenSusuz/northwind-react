@@ -39,6 +39,11 @@ export default function Navi() {
                             Anasayfa
                         </Link>
                     </Menu.Item>
+                    <Menu.Item header >
+                        <Link to={`/admin/2a4a8a6a5a`}>
+                            ADMIN
+                        </Link>
+                    </Menu.Item>
                     <Menu.Item position='right'>
                         {cartItems.length>0&&<CartSummary />}
                     </Menu.Item>

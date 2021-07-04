@@ -10,6 +10,8 @@ import CartDetail from "../pages/CartDetail";
 import TableList from "./TableList";
 import Homepage from "./Homepage";
 import { ToastContainer } from 'react-toastify';
+import ProductAdd from "../pages/ProductAdd";
+import AdminDashboard from "./AdminDashboard";
 
 export default function Dashboard() {
     return (
@@ -30,6 +32,8 @@ export default function Dashboard() {
                         <Route exact path="/products/:productName" component={ProductDetail} />
                         <Route exact path="/category/:categoryId" component={ProductInCategoryList} />
                         <Route path="/cart" component={CartDetail} />
+                        <Route path='/product/add/2a4a8a6a5a' component={ProductAdd} />
+                        <Route path='/admin/2a4a8a6a5a' component={AdminDashboard} />
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
