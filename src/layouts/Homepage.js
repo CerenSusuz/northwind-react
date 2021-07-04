@@ -13,8 +13,8 @@ export default function Homepage() {
 
     return (
         <div>
-            <h2>Stoktaki Ürünlerimiz</h2>
-            {products.filter(product => product.unitsInStock > 0)
+            <h2>Uygun Fiyatlı Ürünlerimiz</h2>
+            {products.filter(product => product.unitPrice < 10 && product.unitsInStock > 0)
                 .map((product) => {
                     return(
                     <Grid columns={4} divided >
@@ -27,6 +27,9 @@ export default function Homepage() {
                             </Grid.Column>
                             <Grid.Column>
                                 <Segment className='overflow'>{product.unitPrice} TL</Segment>
+                            </Grid.Column>
+                            <Grid.Column>
+                                <Segment >Stokta {product.unitsInStock} adet kaldı.</Segment>
                             </Grid.Column>
                             <Grid.Column>
                                 <Button >

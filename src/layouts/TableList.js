@@ -21,8 +21,8 @@ export default function TableList() {
           </Link>
         </Menu.Item>
         <Menu.Item>
-          <Link to={`/products/`}>
-            Ürünler
+          <Link to={`/homepage/products/`}>
+            Tüm Ürünler
           </Link>
         </Menu.Item>
       </Menu>
