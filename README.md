@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+<a href="https://60e166114369a600079ac3b2--happy-boyd-ce3c7a.netlify.app/">CANLI TAKİP EDEBİLMEK İÇİN</a>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
