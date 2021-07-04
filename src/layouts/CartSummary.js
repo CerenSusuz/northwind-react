@@ -1,6 +1,6 @@
 import React from 'react'
-import {  NavLink } from 'react-router-dom';
-import { Dropdown,Label } from "semantic-ui-react";
+import { NavLink } from 'react-router-dom';
+import { Dropdown, Label } from "semantic-ui-react";
 import { useSelector } from 'react-redux';
 
 export default function CartSummary() {
@@ -14,7 +14,7 @@ export default function CartSummary() {
                     cartItems.map((cartItem) => (
                         <Dropdown.Item key={cartItem.product.id}>
                             {cartItem.product.productName}
-                            <Label style={{marginLeft:'.3em'}}>
+                            <Label style={{ marginLeft: '.3em' }}>
                                 {cartItem.quantity}
                             </Label>
                         </Dropdown.Item>
