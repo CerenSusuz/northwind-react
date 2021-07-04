@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import { Rating,Table } from 'semantic-ui-react'
 import ProductService from "../services/productService";
+import React, { useState, useEffect } from 'react'
+import { Table, Rating} from 'semantic-ui-react'
 
 export default function ProductList() {
+
     const [products, setProducts] = useState([]);
 
     useEffect(() => {

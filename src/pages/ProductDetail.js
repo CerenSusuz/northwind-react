@@ -1,13 +1,24 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
-import { Button, Card, Image, Comment, Form, Header, Rating } from 'semantic-ui-react'
+import { Button, Card, Image, Comment, Form, Header, Rating, Icon } from 'semantic-ui-react'
 import ProductService from "../services/productService";
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../store/actions/cartActions'
+import { toast } from 'react-toastify';
 
 export default function ProductDetail() {
+
+  const dispatch = useDispatch()
+
   let { productName } = useParams();
 
   const [product, setProduct] = useState({});
+
+  const handleAddToCart = (product) => {
+    dispatch(addToCart(product));
+    toast.success(`${product.productName} sepetinize eklendi!`)
+  }
 
   useEffect(() => {
     let productService = new ProductService()
@@ -31,8 +42,11 @@ export default function ProductDetail() {
           </Card.Content>
           <Card.Content extra>
             <div className="ui two buttons">
-              <Button basic color="green">
-                Sepete Ekle
+              <Button animated='vertical' onClick={() => handleAddToCart(product)}>
+                <Button.Content visible>
+                  <Icon name='shop' />
+                </Button.Content>
+                <Button.Content hidden>Ekle</Button.Content>
               </Button>
             </div>
           </Card.Content>

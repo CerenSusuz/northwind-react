@@ -9,10 +9,12 @@ import ProductDetail from "../pages/ProductDetail";
 import CartDetail from "../pages/CartDetail";
 import TableList from "./TableList";
 import Homepage from "./Homepage";
+import { ToastContainer } from 'react-toastify';
 
 export default function Dashboard() {
     return (
         <div>
+            <ToastContainer position='bottom-right'/>
             <Grid style={{
                 marginTop: '7em'
             }}>

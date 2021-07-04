@@ -9,20 +9,20 @@ export default function TableList() {
         <Menu.Item>
           <Statistic>
             <Statistic.Label>Günlük Site Ziyareti</Statistic.Label>
-            <Statistic.Value>40,509</Statistic.Value>
+            <Statistic.Value>4,109</Statistic.Value>
           </Statistic>
         </Menu.Item>
         <Menu.Item>
           <Image circular style={{ width: '500px' }} src='https://cdn.pixabay.com/photo/2019/04/26/07/14/store-4156934_960_720.png' />
         </Menu.Item>
         <Menu.Item>
-          <Link to={`/categories/`}>
-            Kategoriler
+          <Link to={`/homepage/products/`}>
+            Tüm Ürünler
           </Link>
         </Menu.Item>
         <Menu.Item>
-          <Link to={`/homepage/products/`}>
-            Tüm Ürünler
+          <Link to={`/categories/`}>
+            Kategoriler
           </Link>
         </Menu.Item>
       </Menu>

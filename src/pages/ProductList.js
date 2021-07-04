@@ -4,6 +4,7 @@ import { Icon, Menu, Table, Rating } from 'semantic-ui-react'
 import ProductService from "../services/productService";
 
 export default function ProductList() {
+
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -22,6 +23,7 @@ export default function ProductList() {
             <Table.HeaderCell>Birim Başına Miktar</Table.HeaderCell>
             <Table.HeaderCell>Kategori</Table.HeaderCell>
             <Table.HeaderCell>Puan</Table.HeaderCell>
+            
           </Table.Row>
         </Table.Header>
 
