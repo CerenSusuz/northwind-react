@@ -9,7 +9,7 @@ import { useSelector } from 'react-redux';
 
 export default function Navi() {
 
-    const [isAuthenticated, setIsAuthenticated] = useState(true)
+    const [isAuthenticated, setIsAuthenticated] = useState(false)
 
     const history = useHistory()
 
