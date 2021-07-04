@@ -17,8 +17,8 @@ export default function Homepage() {
             {products.filter(product => product.unitPrice < 10 && product.unitsInStock > 0)
                 .map((product) => {
                     return(
-                    <Grid columns={4} divided >
-                        <Grid.Row>
+                    <Grid columns={4} divided key={product.id} >
+                        <Grid.Row >
                             <Grid.Column>
                                 <Image src='https://cdn.pixabay.com/photo/2016/01/19/14/46/cheeses-1148950_960_720.jpg' />
                             </Grid.Column>

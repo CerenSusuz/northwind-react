@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { Button, Card, Image, Comment, Form, Header, Rating } from 'semantic-ui-react'
 import ProductService from "../services/productService";
+import { Link } from 'react-router-dom';
 
 export default function ProductDetail() {
   let { productName } = useParams();
@@ -53,7 +54,7 @@ export default function ProductDetail() {
                     <p>mükemmel</p>
                   </Comment.Text>
                   <Comment.Actions>
-                    <a>Reply</a>
+                    <Link>Reply</Link>
                   </Comment.Actions>
                 </Comment.Content>
 
@@ -67,7 +68,7 @@ export default function ProductDetail() {
                       </Comment.Metadata>
                       <Comment.Text>çok iyi :)</Comment.Text>
                       <Comment.Actions>
-                        <a>Reply</a>
+                        <Link>Reply</Link>
                       </Comment.Actions>
                     </Comment.Content>
                   </Comment>
@@ -83,7 +84,7 @@ export default function ProductDetail() {
                   </Comment.Metadata>
                   <Comment.Text>bayıldımm</Comment.Text>
                   <Comment.Actions>
-                    <a>Reply</a>
+                    <Link>Reply</Link>
                   </Comment.Actions>
                 </Comment.Content>
               </Comment>
