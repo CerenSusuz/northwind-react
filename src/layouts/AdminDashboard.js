@@ -10,9 +10,7 @@ export default function AdminDashboard() {
                     İncele/Düzenle
                     <Menu fluid vertical tabular>
                         <Menu.Item header >
-                            <Link to={`/`}>
                                 Kategoriler
-                            </Link>
                         </Menu.Item>
                         <Menu.Item header >
                             <Link to={`/products`}>
