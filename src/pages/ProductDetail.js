@@ -11,31 +11,30 @@ export default function ProductDetail() {
   useEffect(()=>{
     let productService = new ProductService()
     productService.getByProductName(productName).then(result=>setProduct(result.data.data))
-  },[])
+  },[productName])
   
   return (
     <div>
       <Card.Group>
-        <Card fluid>
+        <Card >
           <Card.Content>
             <Image
               floated="right"
-              size="mini"
-              src="/images/avatar/large/steve.jpg"
+              size="small"
+              src="https://cdn.pixabay.com/photo/2016/09/16/19/19/online-store-1674907__340.png"
             />
             <Card.Header>{product.productName}</Card.Header>
-            <Card.Meta>{product.category.categoryName}</Card.Meta>
-            <Card.Description>
-              Steve wants to add you to the group <strong>best friends</strong>
+            {/* <Card.Meta>{product.category.categoryName}</Card.Meta> */}
+            <Card.Description><strong>{product.unitPrice} TL</strong> 
             </Card.Description>
           </Card.Content>
           <Card.Content extra>
             <div className="ui two buttons">
               <Button basic color="green">
-                Approve
+                Add
               </Button>
               <Button basic color="red">
-                Decline
+                Remove
               </Button>
             </div>
           </Card.Content>

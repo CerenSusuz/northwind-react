@@ -7,7 +7,8 @@ import {
     Image,
     List,
     Segment,
-} from 'semantic-ui-react'
+} from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
@@ -18,10 +19,21 @@ export default function Footer() {
                         <Grid.Column width={3}>
                             <Header inverted as='h4' content='Group 1' />
                             <List link inverted>
-                                <List.Item as='a'>Link One</List.Item>
-                                <List.Item as='a'>Link Two</List.Item>
-                                <List.Item as='a'>Link Three</List.Item>
-                                <List.Item as='a'>Link Four</List.Item>
+                                <List.Item>
+                                    <Link to={`/`}>
+                                        Anasayfa
+                                    </Link>
+                                </List.Item>
+                                <List.Item >
+                                    <Link to={`/categories/`}>
+                                        Kategoriler
+                                    </Link>
+                                </List.Item>
+                                <List.Item >
+                                    <Link to={`/products/`}>
+                                        Ürünler
+                                    </Link>
+                                </List.Item>
                             </List>
                         </Grid.Column>
                         <Grid.Column width={3}>
@@ -53,16 +65,16 @@ export default function Footer() {
                     <Divider inverted section />
                     <Image centered size='mini' src='https://cdn.pixabay.com/photo/2018/01/14/23/05/visa-3082813_960_720.jpg' />
                     <List horizontal inverted divided link size='small'>
-                        <List.Item as='a' href='#'>
+                        <List.Item as='a'>
                             Site Map
                         </List.Item>
-                        <List.Item as='a' href='#'>
+                        <List.Item as='a'>
                             Contact Us
                         </List.Item>
-                        <List.Item as='a' href='#'>
+                        <List.Item as='a'>
                             Terms and Conditions
                         </List.Item>
-                        <List.Item as='a' href='#'>
+                        <List.Item as='a'>
                             Privacy Policy
                         </List.Item>
                     </List>

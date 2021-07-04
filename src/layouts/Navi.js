@@ -23,13 +23,13 @@ export default function Navi() {
         <div>
             <Menu fixed='top' inverted style={{ opacity: '.7' }} >
                 <Container>
-                    <Menu.Item as='a' header >
+                    <Menu.Item header >
                         <Link to={`/`}>
                             <Image size='mini' src='https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/12/AdobeStock_113126068-Converted.jpg' style={{ marginRight: '1.5em' }} />
                             e-commerce
                         </Link>
                     </Menu.Item>
-                    <Menu.Item as='a' icon='home' >
+                    <Menu.Item header >
                         <Link to={`/`}>
                             Anasayfa
                         </Link>
