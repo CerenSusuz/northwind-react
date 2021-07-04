@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import { Icon, Menu, Table } from 'semantic-ui-react'
+import { Icon, Menu, Table, Rating } from 'semantic-ui-react'
 import ProductService from "../services/productService";
 
 export default function ProductList() {
@@ -21,6 +21,7 @@ export default function ProductList() {
             <Table.HeaderCell>Stok Adeti</Table.HeaderCell>
             <Table.HeaderCell>Birim Başına Miktar</Table.HeaderCell>
             <Table.HeaderCell>Kategori</Table.HeaderCell>
+            <Table.HeaderCell>Puan</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
 
@@ -36,6 +37,7 @@ export default function ProductList() {
               <Table.Cell>{product.unitsInStock}</Table.Cell>
               <Table.Cell>{product.quantityPerUnit}</Table.Cell>
               <Table.Cell>{product.category.categoryName}</Table.Cell>
+              <Table.Cell><Rating defaultRating={3} maxRating={5} disabled /></Table.Cell>
             </Table.Row>
           ))}
         </Table.Body>
