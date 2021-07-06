@@ -30,7 +30,7 @@ export default function ProductList() {
                             return (
                                 <Table.Row active key={product.id}>
                                     <Table.Cell>
-                                        <Link to={`/products/${product.productName}`}>
+                                        <Link to={`/getProducts/${product.productName}`}>
                                             {product.productName}
                                         </Link>
                                     </Table.Cell>
