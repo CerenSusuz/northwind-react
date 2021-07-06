@@ -1,5 +1,13 @@
 # Getting Started with Create React App
 
+<a href="https://60e30eb6a8b90f0008817b0c--northwind-react-0341e4.netlify.app/">Netlify</a>
+
+<img src="1.png">
+<img src="2.png">
+<img src="3.png">
+<img src="4.png">
+<img src="5.png">
+<img src="6.png">
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
